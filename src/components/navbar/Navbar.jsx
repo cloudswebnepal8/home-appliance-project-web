@@ -1,10 +1,13 @@
 import React from 'react'
-
+import "./Navbar.scss"
 const Navbar = () => {
   return (
     <div className='main-container w-full bg-white shadow-md sticky top-0 z-50'>
         <div className='container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16'>
-         <div className='logo text-xl font-bold text-gray-800 cursor-pointer'>LOGO</div>
+         <div className='logo text-xl font-bold text-gray-800 cursor-pointer'>
+          <img src="./img/house-24.png" alt="" />
+          <span className='text-black-700 px-4 flex gap-0.5'>Home<h1 className='text-blue-700'>Fix</h1></span>
+         </div>
          <div className='links flex items-center gap-6 font-medium text-gray-600'>
             <span className='hover:text-blue-600 transition-colors cursor-pointer>Home</span>
             <span className='hover:text-blue-600 transition-colors cursor-pointer>Services</span>

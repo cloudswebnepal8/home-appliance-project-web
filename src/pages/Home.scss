@@ -1,53 +1,8 @@
 .home{
-    display: flex;
-    justify-items: center;
-    min-height: 1400px;
+   text-align: center;
+   h1{
+    font-size: 30px;
+    font-weight: bold;
+   }
    
-
-    .feature1{
-        display: flex;
-        justify-content: space-between;
-       
-       .feature-left-column{
-        margin-left: 100px ;
-          span {
-            background-color: rgb(166, 166, 247);
-            color: blue;
-            border-radius: 40px;
-            padding: 10px;
-        }
-        h1{
-          font-size: 50px;
-            color: rgb(0, 0, 0);
-          span{
-            font-size: 50px;
-            font-weight: 50px;
-            background-color: rgb(255, 255, 255);
-            color: rgb(99, 99, 255);
-          }
-        }
-        p{
-          font-weight: 200px;
-        }
-          
-        .buttons{
-          display: flex;
-          gap: 10px;
-          button{
-            width: 140px;
-            padding: 10px;
-            border-radius: 15px;
-          }
-        }
-       }
-
-
-
-
-
-       .feature-right-column{
-
-       }
-    }
-
 }

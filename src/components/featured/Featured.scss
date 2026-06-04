@@ -1,0 +1,142 @@
+// Featured.scss
+
+$primary-blue: #1d4ed8;
+$text-dark: #1e293b;
+$text-muted: #64748b;
+$border-color: #e2e8f0;
+
+.Featured-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px; // Keeps content structured on ultra-wide screens
+  margin: 0 auto;
+  padding: 4rem 5%;
+  box-sizing: border-box;
+  background: radial-gradient(circle at 85% 40%, #eff6ff 0%, #ffffff 60%);
+  font-family: 'Inter', sans-serif;
+  gap: 4rem;
+
+  // ==========================================
+  // THE FIX: Horizontal Splitter Row
+  // ==========================================
+  .main-content-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+
+    @media (max-width: 1024px) {
+      flex-direction: column; // Stacks beautifully on tablet/mobile screens
+      gap: 2rem;
+    }
+  }
+
+  // ==========================================
+  // LEFT CONTAINER
+  // ==========================================
+  .left-container {
+    flex: 1;
+    max-width: 540px;
+
+    .texts {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        align-self: flex-start;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: $primary-blue;
+        background-color: #eff6ff;
+        padding: 0.4rem 1rem;
+        border-radius: 9999px;
+        margin-bottom: 1rem;
+      }
+
+      span {
+        text-align: left;
+        display: block;
+        font-size: 3.8rem;
+        font-weight: 800;
+        line-height: 1.1;
+        color: $text-dark;
+        letter-spacing: -0.02em;
+
+        &:nth-of-type(3) {
+          color: $primary-blue;
+        }
+      }
+
+      p {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+
+      button {
+        padding: 0.85rem 1.75rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:first-child {
+          background-color: $primary-blue;
+          color: #ffffff;
+          border: none;
+          &:hover { background-color: #1e40af; }
+        }
+
+        &:last-child {
+          background-color: #ffffff;
+          color: $text-dark;
+          border: 1.5px solid #cbd5e1;
+          &:hover { background-color: #f8fafc; }
+        }
+      }
+    }
+  }
+
+  // RIGHT CONTAINER
+  .bottom-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+    border: 1px solid $border-color;
+
+    & > span {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: $text-dark;
+
+      p {
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: $text-muted;
+        margin-top: 0.25rem;
+        margin-bottom: 0;
+        line-height: 1.4;
+      }
+    }
+
+    @media (max-width: 1024px) { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 640px) { grid-template-columns: 1fr; }
+  }
+}
