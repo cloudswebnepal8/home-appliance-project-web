@@ -16,7 +16,7 @@ const Featured = () => {
           at your doorstep.
         </p>
         </div>
-
+        
         <div className='buttons'>
         <button>Book Service</button>
         <button>Our Services</button>

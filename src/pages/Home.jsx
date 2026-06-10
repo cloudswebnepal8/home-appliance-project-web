@@ -2,6 +2,7 @@ import React from 'react'
 import Featured from '../components/featured/Featured'
 import Featuredtwo from '../components/featuredtwo/Featuredtwo';
 import "./Home.scss";
+import Slider from '../components/slider/Slider';
 const Home = () => {
   return (
     <div className='home'>
@@ -12,7 +13,7 @@ const Home = () => {
        <h1>Appliance Repair & Maintenence</h1>
        <h2 >We repair and maintain all major home appliances</h2>
     </div> <br /><br /><br />
-
+<Slider/>
   <Featuredtwo/>
 
 <h2 className='text-blue-600'>Why Choose Us</h2>
