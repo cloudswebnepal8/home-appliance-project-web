@@ -30,10 +30,22 @@ const Featured = () => {
       {/* lowercontainer */}
       <div className='lower-container'>
         <div className='lower-content'>
+          <div className='l1'>
+            <img src="./img/expert.png" alt="" />
           <span >Expert Technicians <p>Certificied and expernences professionals</p></span>
-        <span >Quick Response <p>We reach you within few hourse</p></span>
-        <span >Affordable Price<p>Best Quality servoce at competative prices </p></span>
-        <span >Genuine Parts<p>We use only orignal and genuine spare parts</p></span>
+          </div>
+          <div className='l1'>
+            <img src="./img/rapid.png" alt="" />
+          <span >Quick Response <p>We reach you withing few hours</p></span>
+          </div>
+          <div className='l1'>
+            <img src="./img/affordable.png" alt="" />
+          <span >Affordable Pricing<p>Best quality service at competitive prices</p></span>
+          </div>
+          <div className='l1'>
+            <img src="./img/genuine.png" alt="" />
+          <span >Expert Technicians <p>We use only orignal and genuine spare parts</p></span>
+          </div>
         </div>
         
       </div>

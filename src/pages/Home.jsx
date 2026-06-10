@@ -2,12 +2,10 @@ import React from 'react'
 import Featured from '../components/featured/Featured'
 import Featuredtwo from '../components/featuredtwo/Featuredtwo';
 import "./Home.scss";
-
 const Home = () => {
   return (
     <div className='home'>
        <Featured/>
-
 <br /><br /><br /><br />
       <div className='middle-text'>
         <h2 className='text-blue-600 font-bold'>OUR SERVICES</h2>
@@ -22,19 +20,47 @@ const Home = () => {
 
 <div className='feature2'>
   <div className='container-left'>
-     <span>Trained & verified Rwchnicians </span>
-    <p>Our Professionals are background varified and 
+    {/* logo1 */}
+    <div className="logo">
+    <img src="./img/trained.png" alt="" />
+    <div className='text'>
+       <span>Trained & verified Rwchnicians </span>
+    <p>Our Professionals are background verified and 
       highly trained.</p>
-      <br />
-    <span>On-Time Service </span>
-    <p>We valyue your time and ensure on time
-      service every time.</p><br />
-    <span>Trained & verified Rwchnicians </span>
-    <p>We provide warrenty on our service and 
-      spare parts</p><br />
-    <span>Trained & verified Rwchnicians</span>
-    <p>Our top priority is customer satisfeaction
-      and trust</p><br />
+    </div>
+   </div>
+   <br />
+{/* logo2 */}
+    <div className="logo">
+    <img src="./img/ontimeservice.png" alt="" />
+    <div className='text'>
+       <span>On-Time Service </span>
+    <p>We value your time and ensure on-time service every time.</p>
+    </div>
+   </div>
+   <br />
+
+   {/* logo3 */}
+    <div className="logo">
+    <img src="./img/warranty.png" alt="" />
+    <div className='text'>
+       <span>Warrenty on Service</span>
+    <p>We provide Warrenty on our service and
+      spare parts.
+    </p>
+    </div>
+   </div>
+   <br />
+   {/* logo4 */}
+    <div className="logo">
+    <img src="./img/satisfication.png" alt="" />
+    <div className='text'>
+       <span>Customer Satisfaction</span>
+    <p>Our tip priority in customer Satisfaction
+      and trust.
+    </p>
+    </div>
+   </div>
   </div> 
  
   <div className='container-right'>
