@@ -1,10 +1,110 @@
-.logo{
+// Variables for easy customization
+$primary-color: #1d4ed8; // Matches your Tailwind 'text-blue-700'
+$text-dark: #333333;
+$text-light: #666666;
+$white: #ffffff;
+$transition-speed: 0.3s;
 
+.main-container {
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .sub-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     display: flex;
-    
-    img{
-        max-width: 50px ;
-        height: 30px;
+    justify-content: space-between;
+    align-items: center;
 
+    // Left Side: Logo & Brand Name
+    .left-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+      }
+
+      span {
+        display: flex;
+        align-items: baseline;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $text-dark;
+
+        h1 {
+          display: inline;
+          font-size: 1.5rem;
+          // Note: Since you used Tailwind's 'text-blue-700' in the component, 
+          // this color will be overridden by Tailwind, but we keep it here as a backup.
+          color: $primary-color; 
+        }
+      }
     }
+
+    // Right Side: Navigation Links & CTA Button
+    .right-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      span {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $text-light;
+        cursor: pointer;
+        transition: color $transition-speed ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      button {
+        background-color: $primary-color;
+        color: $white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color $transition-speed ease, transform 0.2s ease;
+
+        &:hover {
+          background-color: darkne($primary-color, 10%);
+          transform: translateY(-1px);
+        }
+
+        &:active {
+          transform: translateY(1px);
+        }
+      }
+    }
+  }
+}
+
+// Quick Responsive Tweak for Mobile
+@media (max-width: 768px) {
+  .main-container {
+    .sub-container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      .right-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
 }

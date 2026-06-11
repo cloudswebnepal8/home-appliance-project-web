@@ -3,8 +3,8 @@ import "swiper/css";
 import "./Slider.scss"
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-
 import { cards } from "../../../../data";
+import {Link} from "react-router";
 
 const Slider = () => {
   return (
@@ -22,6 +22,7 @@ const Slider = () => {
       >
         {cards.map((item) => (
           <SwiperSlide key={item.id}>
+            
             <div className="sub-container">
               <img
                 src={item.img}
@@ -32,7 +33,7 @@ const Slider = () => {
                 <h2 >{item.title}</h2>
                 <p>{item.desc}</p>
               </div>
-              <button>Book Now</button>
+           <Link to="/contact"><button>Book Now</button></Link>   
             </div>
           </SwiperSlide>
         ))}

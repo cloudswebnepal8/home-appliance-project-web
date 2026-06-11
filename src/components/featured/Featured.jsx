@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Featured.scss"
+import { Link } from 'react-router'
 const Featured = () => {
-
+  
   return (
     <div className='Featured-container'>
       <div className='upper-container'>
@@ -18,15 +19,17 @@ const Featured = () => {
         </div>
         
         <div className='buttons'>
-        <button>Book Service</button>
+          <Link to='/contact'><button>Book Service</button></Link>
         <button>Our Services</button>
        </div>
         </div>
+
         {/* rightconainer */}
         <div className='right-container'>
           {/* <img src="./img/plumbergirl.png" alt="" /> */}
         </div>
       </div>
+
       {/* lowercontainer */}
       <div className='lower-container'>
         <div className='lower-content'>

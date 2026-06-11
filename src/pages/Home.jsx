@@ -3,18 +3,28 @@ import Featured from '../components/featured/Featured'
 import Featuredtwo from '../components/featuredtwo/Featuredtwo';
 import "./Home.scss";
 import Slider from '../components/slider/Slider';
+import { FaArrowRightLong } from "react-icons/fa6";
+
 const Home = () => {
+
   return (
     <div className='home'>
        <Featured/>
-<br /><br /><br /><br />
+<br/><br/><br /><br/>
+
+<div id='services'>
       <div className='middle-text'>
         <h2 className='text-blue-600 font-bold'>OUR SERVICES</h2>
        <h1>Appliance Repair & Maintenence</h1>
        <h2 >We repair and maintain all major home appliances</h2>
-    </div> <br /><br /><br />
-<Slider/>
-  <Featuredtwo/>
+    </div> <br/><br/><br/>
+    <Slider/>
+    </div>
+      
+
+    
+
+<Featuredtwo/>
 
 <h2 className='text-blue-600'>Why Choose Us</h2>
 <h1>We Provide Reliable and Quality Service</h1><br /><br />
@@ -28,7 +38,7 @@ const Home = () => {
        <span>Trained & verified Rwchnicians </span>
     <p>Our Professionals are background verified and 
       highly trained.</p>
-    </div>
+    </div>hu
    </div>
    <br />
 {/* logo2 */}
@@ -79,17 +89,21 @@ const Home = () => {
        <h2>Step 1</h2><br />
         <span>Book a service <p>Schedule your service online or call us</p></span>
       </div>
+       <FaArrowRightLong size={65}/>
+      
       <div className='step-2-container'>
         <img src="./img/sheet.png" alt="Step 2"/>
         <h2>Step 2</h2><br />
         <span>We Confirm<p>Our team will confirm your booking.</p></span>
       </div>
+       <FaArrowRightLong size={65}/>
       <div className='step-3-container'>
          <img src="./img/repair.png" alt="Step 3" />
        <h2>Step 3</h2><br />
   
         <span>We Fix the Issues<p>Our expert technicians will fix the issue</p></span>
       </div>
+       <FaArrowRightLong size={65}/>
       <div className='step-4-container'>
         <img src="./img/checkbox.png" alt="Step 4" />
         <h2>Step 4</h2><br />
