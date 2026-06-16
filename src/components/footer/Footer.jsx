@@ -1,15 +1,14 @@
 import React from 'react'
-
+import { WHATSAPP_LINK } from '../constants/Constants'
 const Footer = () => {
   return (
     <footer className="bg-slate-950 text-gray-400 text-sm py-12 px-4 sm:px-6 lg:px-8">
-      
+
       {/* Centered Main Container */}
       <div className="max-w-7xl mx-auto">
         
         {/* Top Section: Responsive Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pb-10">
-          
           {/* Brand/Logo Column */}
           <div className="flex flex-col gap-3">
             <h1 className="text-2xl font-bold text-white tracking-tight">
@@ -19,7 +18,6 @@ const Footer = () => {
               Your trusted partner for home appliance repair and maintenance services.
             </p>
           </div>
-
           {/* Quick Links Column */}
           <div className="flex flex-col gap-2.5">
             <h2 className="text-white font-semibold text-base tracking-wide mb-1">Quick Links</h2>
@@ -84,11 +82,13 @@ const Footer = () => {
           <div className="right flex flex-col sm:flex-row items-center gap-6">
             {/* Social Icons Container */}
             <div className="social flex items-center gap-4">
-              <img src="./img/insta.png" alt="Instagram" className="w-5 h-5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
-              <img src="./img/facebook.png" alt="Facebook" className="w-5 h-5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
+              <img src="./img/instagram.png" alt="Instagram" className="w-5 h-5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
               <img src="./img/twitter.png" alt="Twitter" className="w-5 h-5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
               <img src="./img/youtube.png" alt="YouTube" className="w-5 h-5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
-              <img src="./img/linkedin.png" alt="LinkedIn" className="w-5 h-5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
+<a href={WHATSAPP_LINK} target='_blank' rel='noopener noreferrer'>
+   <img src="./img/whatsapp.png" alt="Whatsapp" className="w-5 h-5 opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
+</a>
+             
             </div>
             
             {/* Language Selector */}

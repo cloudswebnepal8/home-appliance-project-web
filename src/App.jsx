@@ -5,9 +5,11 @@ import Footer from './components/footer/Footer'
 import Home from './pages/Home'
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
+import ScrollToTop from './components/scrollto/ScrollToTop';
 const App = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <div className='app'>
       <Navbar/>
       <Routes>
@@ -17,8 +19,7 @@ const App = () => {
       </Routes>
           <Footer/>
     </div>
-    </BrowserRouter>
-    
+    </BrowserRouter>   
   )
 }
 export default App
