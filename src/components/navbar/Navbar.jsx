@@ -25,7 +25,7 @@ const closeMenu=()=>{
        <img className='house' src="./img/house-24.png" alt=""/>
        </Link>   
         <Link to='/' onClick={closeMenu}>
-        <span className='pendora-text'>Pendora<h1 className='text-blue-700'>Repairs</h1></span>
+        <span className='pandora-text'>Pandora<h1 className='text-blue-700'>Repairs</h1></span>
         </Link>  
          </div>
 

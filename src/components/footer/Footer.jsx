@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand/Logo Column */}
           <div className="flex flex-col gap-3">
             <h1 className="text-2xl font-bold text-white tracking-tight">
-              Home<span className="text-blue-500">Fix</span>
+              Pandora<span className="text-blue-500">Fix</span>
             </h1>
             <p className="text-xs text-gray-400 leading-relaxed max-w-xs">
               Your trusted partner for home appliance repair and maintenance services.
@@ -76,7 +76,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 text-xs text-gray-500 gap-4">
           
           <div className="left">
-            <h2>&copy; 2026 HomeFix. All Rights Reserved.</h2>
+            <h2>&copy; 2026 PandoraFix. All Rights Reserved.</h2>
           </div>
           
           <div className="right flex flex-col sm:flex-row items-center gap-6">

@@ -49,7 +49,7 @@ const Home = () => {
     <p>We value your time and ensure on-time service every time.</p>
     </div>
    </div>
-   <br />
+   <br/>
 
    {/* logo3 */}
     <div className="logo">

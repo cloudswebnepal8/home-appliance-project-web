@@ -1,37 +1,3 @@
-// const express = require("express");
-// const nodemailer = require(nodemailer);
-// const cors = require("cors");
-// const dotenv = require("dotenv");
-
-// dotenv.config(); //lpoad the hidden password from .env file
-
-// const app = express();
-
-// //tools config
-// app.use(cors());//this allows out react frontend to talk to this backend
-// app.use(express.json()); // this allow s server to read JSON text data sent by react
-
-
-// //setup nodemailer "Transpeoter" (yout backends mail carrirer)
-// const transporter = nodemailer.createTransport({
-//   service: "gmail",
-//   auth:{
-//     user: process.env.EMAIL_USER,
-//     pass: process.env.EMAIL_PASS,
-//   },
-// });
-
-// //Creating the API route (the specific address react wil send data to)
-// app.post("/api/contact", async(req, res)={
-//     //Grab the data that user typed into the react form
-//     const {name, email, subject, message} = req.body;
-
-//     //Design the email layout
-//     const mailOptions={
-//         from: `"${name}"`
-//     }
-// })
-
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -68,11 +34,11 @@ app.post("/api/contact", async (req, res) => {
     subject: `Website Contact: ${subject}`,
     text: `You have a new message:\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
-
+  
   try {
-    // Attempt to send the email
+    //Attempt to send the email
     await transporter.sendMail(mailOptions);
-    // Tell React: "Everything went perfectly!"
+    //Tell React: "Everything went perfectly!"
     res.status(200).json({ message: "Success" });
   } catch (error) {
     console.error(error);
