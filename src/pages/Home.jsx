@@ -35,10 +35,10 @@ const Home = () => {
     <div className="logo">
     <img src="./img/trained.png" alt="" />
     <div className='text'>
-       <span>Trained & verified Rwchnicians </span>
+       <span>Trained & verified Technicians </span>
     <p>Our Professionals are background verified and 
       highly trained.</p>
-    </div>hu
+    </div>
    </div>
    <br />
 {/* logo2 */}
@@ -75,9 +75,8 @@ const Home = () => {
   </div> 
  
   <div className='container-right'>
-    <img src="" alt="" />
   </div>
-</div> <br /><br />
+</div> <br /><br /><br /><br /><br />
 
 <h2 className='text-blue-600 font-semibold'>HOW IT WORKS</h2>
 <h1>Simple Steps to Book Our Service</h1>
